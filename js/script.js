@@ -1,6 +1,6 @@
 var app = angular.module('app',['angular-iosui']);
 
-app.controller('AppCtrl', function ($scope) {
+app.controller('AppCtrl', function ($scope, $http) {
 
     $scope.mapRadius = 10;
 
@@ -41,6 +41,64 @@ app.controller('AppCtrl', function ($scope) {
 
     $scope.changeRadius = function () {
         circle.setRadius($scope.mapRadius*1000);
-    }
+    };
+
+    $scope.cursos = [];
+
+    $http.get('api/cursos.json').success(function (data) {
+        $scope.cursos = data.cursos;
+    });
+
+    $scope.sortKey = 'nome';
+    $scope.sort = function(keyname){
+        $scope.sortKey = keyname;   //set the sortKey to the param passed
+        $scope.reverse = !$scope.reverse; //if true make it false and vice versa
+    };
+
+    $scope.filter = {};
+
+    $scope.select = {
+        'universidade':'Escolha uma universidade',
+        'modalidade':'Escolha a modalidade',
+        'turno':'Escolha o turno',
+        'grau':'Escolha o grau'
+    };
+
+    $scope.selectUniversidade = function () {
+        if($scope.select.universidade != 'Escolha uma universidade'){
+            $scope.filter.universidade = $scope.select.universidade;
+        }
+        else{
+            $scope.filter.universidade = "";
+        }
+    };
+
+    $scope.selectModalidade = function () {
+        if($scope.select.modalidade != 'Escolha a modalidade'){
+            $scope.filter.modalidade = $scope.select.modalidade;
+        }
+        else{
+            $scope.filter.modalidade = "";
+        }
+    };
+
+    $scope.selectTurno = function () {
+        if($scope.select.turno != 'Escolha o turno'){
+            $scope.filter.turno= $scope.select.turno;
+        }
+        else{
+            $scope.filter.turno = "";
+        }
+    };
+
+    $scope.selectGrau = function () {
+        if($scope.select.grau != 'Escolha o grau'){
+            $scope.filter.grau= $scope.select.grau;
+        }
+        else{
+            $scope.filter.grau = "";
+        }
+    };
+
 
 });

@@ -1,7 +1,8 @@
 {
   "cursos": [
     {
-      "curso":"Engenharia da Computação",
+      "id":1,
+      "nome":"Engenharia da Computação",
       "universidade":"FATESF",
       "campus":"FATESF - Jacareí - Vila Martinez",
       "modalidade":"Presencial",
@@ -9,10 +10,11 @@
       "grau":"Bacharelado(graduação)",
       "cidade":"Jacareí",
       "bolsa":"30 %",
-      "precoCupom":"R$ 150,00"
+      "precoCupom":150.0
     },
     {
-      "curso":"Engenharia da Computação",
+      "id":2,
+      "nome":"Engenharia da Computação",
       "universidade":"FATESF",
       "campus":"FATESF - Jacareí - Vila Martinez",
       "modalidade":"Presencial",
@@ -20,10 +22,11 @@
       "grau":"Bacharelado(graduação)",
       "cidade":"Jacareí",
       "bolsa":"30 %",
-      "precoCupom":"R$ 150,00"
+      "precoCupom":150.0
     },
     {
-      "curso":"Engenharia de Controle e Automação",
+      "id":3,
+      "nome":"Engenharia de Controle e Automação",
       "universidade":"FATESF",
       "campus":"FATESF - Jacareí - Vila Martinez",
       "modalidade":"Presencial",
@@ -31,10 +34,11 @@
       "grau":"Bacharelado(graduação)",
       "cidade":"Jacareí",
       "bolsa":"30 %",
-      "precoCupom":"R$ 150,00"
+      "precoCupom":150.0
     },
     {
-      "curso":"Engenharia de Controle e Automação",
+      "id":4,
+      "nome":"Engenharia de Controle e Automação",
       "universidade":"FATESF",
       "campus":"FATESF - Jacareí - Vila Martinez",
       "modalidade":"Presencial",
@@ -42,10 +46,11 @@
       "grau":"Bacharelado(graduação)",
       "cidade":"Jacareí",
       "bolsa":"30 %",
-      "precoCupom":"R$ 150,00"
+      "precoCupom":150.0
     },
     {
-      "curso":"Administração",
+      "id":5,
+      "nome":"Administração",
       "universidade":"FATESF",
       "campus":"FATESF - Jacareí - Vila Martinez",
       "modalidade":"Presencial",
@@ -53,10 +58,11 @@
       "grau":"Bacharelado(graduação)",
       "cidade":"Jacareí",
       "bolsa":"30 %",
-      "precoCupom":"R$ 150,00"
+      "precoCupom":150.0
     },
     {
-      "curso":"Administração",
+      "id":6,
+      "nome":"Administração",
       "universidade":"FATESF",
       "campus":"FATESF - Jacareí - Vila Martinez",
       "modalidade":"Presencial",
@@ -64,10 +70,11 @@
       "grau":"Bacharelado(graduação)",
       "cidade":"Jacareí",
       "bolsa":"30 %",
-      "precoCupom":"R$ 150,00"
+      "precoCupom":150.0
     },
     {
-      "curso":"Arquitetura e Urbanismo",
+      "id":7,
+      "nome":"Arquitetura e Urbanismo",
       "universidade":"UNIP",
       "campus":"UNIP - São José dos Campos",
       "modalidade":"Presencial",
@@ -75,10 +82,11 @@
       "grau":"Bacharelado(graduação)",
       "cidade":"São José dos Campos",
       "bolsa":"20 %",
-      "precoCupom":"R$ 200,00"
+      "precoCupom":200.0
     },
     {
-      "curso":"Arquitetura e Urbanismo",
+      "id":8,
+      "nome":"Arquitetura e Urbanismo",
       "universidade":"UNIP",
       "campus":"UNIP - São José dos Campos",
       "modalidade":"Presencial",
@@ -86,10 +94,11 @@
       "grau":"Bacharelado(graduação)",
       "cidade":"São José dos Campos",
       "bolsa":"20 %",
-      "precoCupom":"R$ 200,00"
+      "precoCupom":200.0
     },
     {
-      "curso":"Administração",
+      "id":9,
+      "nome":"Administração",
       "universidade":"UNIP",
       "campus":"UNIP - São José dos Campos",
       "modalidade":"Presencial",
@@ -97,10 +106,11 @@
       "grau":"Bacharelado(graduação)",
       "cidade":"São José dos Campos",
       "bolsa":"30 %",
-      "precoCupom":"R$ 250,00"
+      "precoCupom":250.0
     },
     {
-      "curso":"Administração",
+      "id":10,
+      "nome":"Administração",
       "universidade":"UNIP",
       "campus":"UNIP - São José dos Campos",
       "modalidade":"Presencial",
@@ -108,7 +118,7 @@
       "grau":"Bacharelado(graduação)",
       "cidade":"São José dos Campos",
       "bolsa":"30 %",
-      "precoCupom":"R$ 250,00"
+      "precoCupom":250.0
     }
   ]
 }

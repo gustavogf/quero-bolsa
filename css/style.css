@@ -298,3 +298,7 @@ input {
 
 .disable {
     margin-left: 0px !important; }
+
+th {
+    cursor: pointer;
+}
