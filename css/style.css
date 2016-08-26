@@ -62,7 +62,7 @@
 }
 
 .sidebar-nav li a {
-    color: #626262;
+    color: #3c9eee;
 }
 
 .sidebar-nav li img {
@@ -73,12 +73,6 @@
 .sidebar-nav li i {
     font-size: 30px;
     color: #3c9eee;
-}
-
-.sidebar-nav li a:hover {
-    text-decoration: none;
-    color: #4d4d4d;
-    background: rgba(222, 222, 222, 0.2);
 }
 
 .sidebar-nav li a:active,
