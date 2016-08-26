@@ -1,6 +1,6 @@
 # quero-bolsa
 
 #### Abrir em um servidor http comum, exemplo: http-server
-#### >> npm install http-server
-#### >> http-server
+#### pasta-projeto >> npm install http-server
+#### pasta-projeto >> http-server
 #### Acessar localhost:8080
