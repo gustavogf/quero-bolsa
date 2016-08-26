@@ -1,0 +1,124 @@
+{
+  "cursos": [
+    {
+      "id":1,
+      "nome":"Engenharia da Computação",
+      "universidade":"FATESF",
+      "campus":"FATESF - Jacareí - Vila Martinez",
+      "modalidade":"Presencial",
+      "turno":"Manhã",
+      "grau":"Bacharelado(graduação)",
+      "cidade":"Jacareí",
+      "bolsa":"30 %",
+      "precoCupom":150.0
+    },
+    {
+      "id":2,
+      "nome":"Engenharia da Computação",
+      "universidade":"FATESF",
+      "campus":"FATESF - Jacareí - Vila Martinez",
+      "modalidade":"Presencial",
+      "turno":"Noite",
+      "grau":"Bacharelado(graduação)",
+      "cidade":"Jacareí",
+      "bolsa":"30 %",
+      "precoCupom":150.0
+    },
+    {
+      "id":3,
+      "nome":"Engenharia de Controle e Automação",
+      "universidade":"FATESF",
+      "campus":"FATESF - Jacareí - Vila Martinez",
+      "modalidade":"Presencial",
+      "turno":"Manhã",
+      "grau":"Bacharelado(graduação)",
+      "cidade":"Jacareí",
+      "bolsa":"30 %",
+      "precoCupom":150.0
+    },
+    {
+      "id":4,
+      "nome":"Engenharia de Controle e Automação",
+      "universidade":"FATESF",
+      "campus":"FATESF - Jacareí - Vila Martinez",
+      "modalidade":"Presencial",
+      "turno":"Noite",
+      "grau":"Bacharelado(graduação)",
+      "cidade":"Jacareí",
+      "bolsa":"30 %",
+      "precoCupom":150.0
+    },
+    {
+      "id":5,
+      "nome":"Administração",
+      "universidade":"FATESF",
+      "campus":"FATESF - Jacareí - Vila Martinez",
+      "modalidade":"Presencial",
+      "turno":"Manhã",
+      "grau":"Bacharelado(graduação)",
+      "cidade":"Jacareí",
+      "bolsa":"30 %",
+      "precoCupom":150.0
+    },
+    {
+      "id":6,
+      "nome":"Administração",
+      "universidade":"FATESF",
+      "campus":"FATESF - Jacareí - Vila Martinez",
+      "modalidade":"Presencial",
+      "turno":"Noite",
+      "grau":"Bacharelado(graduação)",
+      "cidade":"Jacareí",
+      "bolsa":"30 %",
+      "precoCupom":150.0
+    },
+    {
+      "id":7,
+      "nome":"Arquitetura e Urbanismo",
+      "universidade":"UNIP",
+      "campus":"UNIP - São José dos Campos",
+      "modalidade":"Presencial",
+      "turno":"Manhã",
+      "grau":"Bacharelado(graduação)",
+      "cidade":"São José dos Campos",
+      "bolsa":"20 %",
+      "precoCupom":200.0
+    },
+    {
+      "id":8,
+      "nome":"Arquitetura e Urbanismo",
+      "universidade":"UNIP",
+      "campus":"UNIP - São José dos Campos",
+      "modalidade":"Presencial",
+      "turno":"Noite",
+      "grau":"Bacharelado(graduação)",
+      "cidade":"São José dos Campos",
+      "bolsa":"20 %",
+      "precoCupom":200.0
+    },
+    {
+      "id":9,
+      "nome":"Administração",
+      "universidade":"UNIP",
+      "campus":"UNIP - São José dos Campos",
+      "modalidade":"Presencial",
+      "turno":"Manhã",
+      "grau":"Bacharelado(graduação)",
+      "cidade":"São José dos Campos",
+      "bolsa":"30 %",
+      "precoCupom":250.0
+    },
+    {
+      "id":10,
+      "nome":"Administração",
+      "universidade":"UNIP",
+      "campus":"UNIP - São José dos Campos",
+      "modalidade":"Presencial",
+      "turno":"Noite",
+      "grau":"Bacharelado(graduação)",
+      "cidade":"São José dos Campos",
+      "bolsa":"30 %",
+      "precoCupom":250.0
+    }
+  ]
+}
