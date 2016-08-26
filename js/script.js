@@ -3,21 +3,14 @@ var app = angular.module('app',['angular-iosui']);
 app.controller('AppCtrl', function ($scope, $http) {
 
     $scope.mapRadius = 10;
-
-    // if HTML DOM Element that contains the map is found...
+    
     if (document.getElementById('map-canvas')){
-
-        // Coordinates to center the map
         var myLatlng = new google.maps.LatLng(-23.220697,-45.891254);
-
-        // Other options for the map, pretty much selfexplanatory
         var mapOptions = {
             zoom: 8,
             center: myLatlng,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         };
-
-        // Attach a map to the DOM Element, with the defined settings
         var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
 
         var marker=new google.maps.Marker({
@@ -36,7 +29,6 @@ app.controller('AppCtrl', function ($scope, $http) {
             fillOpacity:0.1,
             map: map
         });
-
     }
 
     $scope.changeRadius = function () {
@@ -51,8 +43,8 @@ app.controller('AppCtrl', function ($scope, $http) {
 
     $scope.sortKey = 'nome';
     $scope.sort = function(keyname){
-        $scope.sortKey = keyname;   //set the sortKey to the param passed
-        $scope.reverse = !$scope.reverse; //if true make it false and vice versa
+        $scope.sortKey = keyname; 
+        $scope.reverse = !$scope.reverse;
     };
 
     $scope.filter = {};
@@ -106,6 +98,4 @@ app.controller('AppCtrl', function ($scope, $http) {
             $scope.filter.grau = "";
         }
     };
-
-
 });
