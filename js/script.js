@@ -57,12 +57,19 @@ app.controller('AppCtrl', function ($scope, $http) {
 
     $scope.filter = {};
 
-    $scope.select = {
-        'universidade':'Escolha uma universidade',
-        'modalidade':'Escolha a modalidade',
-        'turno':'Escolha o turno',
-        'grau':'Escolha o grau'
+    $scope.limparCampos = function () {
+        $scope.filter.nome = "";
+        $scope.filter.id = "";
+        $scope.filter.cidade = "";
+        $scope.select = {
+            'universidade':'Escolha uma universidade',
+            'modalidade':'Escolha a modalidade',
+            'turno':'Escolha o turno',
+            'grau':'Escolha o grau'
+        };
     };
+    
+    $scope.limparCampos();
 
     $scope.selectUniversidade = function () {
         if($scope.select.universidade != 'Escolha uma universidade'){
