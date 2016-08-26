@@ -148,7 +148,12 @@
 
 .menu-toggle {
     font-size: 22px;
-    color: #7f7f7f;
+    color: #999999;
+}
+
+.menu-toggle.menu-toggle-right {
+    float: right;
+    padding: 10px
 }
 
 .menu-toggle:hover {
