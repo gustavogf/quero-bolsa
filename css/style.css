@@ -53,6 +53,12 @@
 .sidebar-nav li {
     padding: 20px 5px;
     text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sidebar-nav li:hover {
+    background-color: #ffffff;
 }
 
 .sidebar-nav li a {
@@ -66,6 +72,7 @@
 
 .sidebar-nav li i {
     font-size: 30px;
+    color: #3c9eee;
 }
 
 .sidebar-nav li a:hover {
@@ -132,6 +139,17 @@
 
 .navbar-nav > li > a.logo {
     padding: 5px;
+}
+
+.navbar-nav > li > a {
+    font-weight: bold;
+}
+
+.navbar-nav > li > a > i {
+    font-size: 18px;
+    margin-right: 5px;
+    vertical-align: middle;
+    color: #3c9eee;
 }
 
 .menu-toggle {
