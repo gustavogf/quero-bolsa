@@ -88,8 +88,10 @@
                           <div class="col-lg-12">
                             <select class="form-control" id="select" ng-model="select.universidade" ng-change="selectUniversidade()">
                               <option>Escolha uma universidade</option>
+                              <option>ETEP</option>
                               <option>FATESF</option>
                               <option>UNIP</option>
+                              <option>UNITAU</option>
                             </select>
                           </div>
                         </div>
@@ -121,7 +123,7 @@
                           <div class="slider-form">
                             <div class="col-lg-6">
                               <span class="pull-left">Preço</span>
-                              <ios-slider class="pull-left" ng-model="filter.precoCupom" value=150 max=3000 min=150 ng-change="changePrice()"></ios-slider>
+                              <ios-slider class="pull-left" ng-model="filter.precoCupom" value=200 max=1000 min=200 ng-change="changePrice()"></ios-slider>
                               <span>R$ {{filter.precoCupom}}</span>
                             </div>
                           </div>
