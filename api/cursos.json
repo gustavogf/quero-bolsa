@@ -119,6 +119,54 @@
       "cidade":"São José dos Campos",
       "bolsa":"30 %",
       "precoCupom":250.0
+    },
+    {
+      "id":11,
+      "nome":"Administração",
+      "universidade":"UNIP",
+      "campus":"UNIP - São José dos Campos",
+      "modalidade":"Presencial",
+      "turno":"Tarde",
+      "grau":"Bacharelado(graduação)",
+      "cidade":"São José dos Campos",
+      "bolsa":"30 %",
+      "precoCupom":250.0
+    },
+    {
+      "id":12,
+      "nome":"Administração",
+      "universidade":"UNITAU",
+      "campus":"UNITAU - Taubaté",
+      "modalidade":"À distância",
+      "turno":"",
+      "grau":"Bacharelado(graduação)",
+      "cidade":"Taubaté",
+      "bolsa":"40 %",
+      "precoCupom":680.0
+    },
+    {
+      "id":13,
+      "nome":"Análise e Desenvolvimento de Sistemas",
+      "universidade":"ETEP",
+      "campus":"ETEP - Esplanada",
+      "modalidade":"Presencial",
+      "turno":"Noite",
+      "grau":"Tecnólogo",
+      "cidade":"São José dos Campos",
+      "bolsa":"25 %",
+      "precoCupom":540.0
+    },
+    {
+      "id":14,
+      "nome":"Logística",
+      "universidade":"ETEP",
+      "campus":"ETEP - Esplanada",
+      "modalidade":"Presencial",
+      "turno":"Noite",
+      "grau":"Tecnólogo",
+      "cidade":"São José dos Campos",
+      "bolsa":"40 %",
+      "precoCupom":720.0
     }
   ]
 }
