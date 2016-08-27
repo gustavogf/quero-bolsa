@@ -4,6 +4,8 @@ app.controller('AppCtrl', function ($scope, $http) {
 
     $scope.mapRadius = 10;
     
+
+    // CRIANDO MAPA, MARCADOR E CÍRCULO
     if (document.getElementById('map-canvas')){
         var myLatlng = new google.maps.LatLng(-23.220697,-45.891254);
         var mapOptions = {
@@ -31,16 +33,19 @@ app.controller('AppCtrl', function ($scope, $http) {
         });
     }
 
+    // FUNÇÃO PARA ALTERAR O RAIO DO CÍRCULO CHAMADA PELO SLIDER
     $scope.changeRadius = function () {
         circle.setRadius($scope.mapRadius*1000);
     };
 
     $scope.cursos = [];
 
+    //CHAMADA AJAX PARA ARQUIVO JSON COM LISTA DE CURSOS
     $http.get('api/cursos.json').success(function (data) {
         $scope.cursos = data.cursos;
     });
 
+    //FUNÇÃO PARA ORDENAÇÃO DE COLUNAS NA TABELA
     $scope.sortKey = 'nome';
     $scope.sort = function(keyname){
         $scope.sortKey = keyname; 
@@ -49,6 +54,7 @@ app.controller('AppCtrl', function ($scope, $http) {
 
     $scope.filter = {};
 
+    // FUNÇÃO PARA LIMPAR TODOS CAMPOS DO FORMULÁRIO
     $scope.limparCampos = function () {
         $scope.filter.nome = "";
         $scope.filter.id = "";
@@ -62,6 +68,9 @@ app.controller('AppCtrl', function ($scope, $http) {
     };
     
     $scope.limparCampos();
+
+
+    // FUNÇÕES PARA TRATAR A SELEÇÃO DE UNIVERSIDADE, MODALIDADE, TURNO E GRAU PARA FILTRAR A TABELA
 
     $scope.selectUniversidade = function () {
         if($scope.select.universidade != 'Escolha uma universidade'){
