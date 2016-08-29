@@ -1,8 +1,8 @@
-var app = angular.module('app',['angular-iosui']);
+var app = angular.module('app',[]);
 
 app.controller('AppCtrl', function ($scope, $http) {
 
-    $scope.mapRadius = 10;
+    $scope.mapRadius = 50;
     
 
     // CRIANDO MAPA, MARCADOR E CÍRCULO
@@ -23,7 +23,7 @@ app.controller('AppCtrl', function ($scope, $http) {
 
         var circle = new google.maps.Circle({
             center:myLatlng,
-            radius:10000,
+            radius:50000,
             strokeColor:"#0000FF",
             strokeOpacity:0.8,
             strokeWeight:2,
@@ -65,6 +65,7 @@ app.controller('AppCtrl', function ($scope, $http) {
             'turno':'Escolha o turno',
             'grau':'Escolha o grau'
         };
+        $scope.filter.precoCupom = 500;
     };
     
     $scope.limparCampos();
