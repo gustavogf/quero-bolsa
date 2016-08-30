@@ -58,7 +58,6 @@
           </nav>
 
           <div class="col-md-12">
-            <div class="bs-docs-section">
               <div class="row">
                 <div class="col-lg-12">
                   <div class="page-header">
@@ -70,183 +69,175 @@
 
               <div class="row">
                 <div class="col-lg-6">
-                  <div class="bs-component">
-                    <form class="form-horizontal">
-                      <fieldset>
-                        <div class="form-group">
-                          <div class="col-lg-12">
-                            <input type="text" class="form-control" placeholder="Escolha o curso" ng-model="filter.nome">
+                  <form class="form-horizontal">
+                    <fieldset>
+                      <div class="form-group">
+                        <div class="col-lg-12">
+                          <input type="text" class="form-control" placeholder="Escolha o curso" ng-model="filter.nome">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-lg-12">
+                          <select class="form-control" id="select" ng-model="select.universidade" ng-change="selectUniversidade()">
+                            <option>Escolha uma universidade</option>
+                            <option>ETEP</option>
+                            <option>FATESF</option>
+                            <option>UNIP</option>
+                            <option>UNITAU</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-lg-6">
+                          <select class="form-control" id="select" ng-model="select.modalidade" ng-change="selectModalidade()">
+                            <option>Escolha a modalidade</option>
+                            <option>Presencial</option>
+                            <option>À distância</option>
+                          </select>
+                        </div>
+                        <div class="col-lg-6">
+                          <select class="form-control" id="select" ng-model="select.turno" ng-change="selectTurno()">
+                            <option>Escolha o turno</option>
+                            <option>Manhã</option>
+                            <option>Tarde</option>
+                            <option>Noite</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-lg-6">
+                          <select class="form-control" id="select" ng-model="select.grau" ng-change="selectGrau()">
+                            <option>Escolha o grau</option>
+                            <option>Bacharelado</option>
+                            <option>Tecnólogo</option>
+                          </select>
+                        </div>
+                        <div class="slider-form">
+                          <div class="col-lg-6">
+                            <span>Preço</span>
+                            <input class="range-slider__range" type="range" value="500" min="150" max="2000" ng-model="filter.precoCupom">
+                            <span class="pull-right">R$ {{filter.precoCupom}}</span>
                           </div>
                         </div>
-                        <div class="form-group">
-                          <div class="col-lg-12">
-                            <select class="form-control" id="select" ng-model="select.universidade" ng-change="selectUniversidade()">
-                              <option>Escolha uma universidade</option>
-                              <option>ETEP</option>
-                              <option>FATESF</option>
-                              <option>UNIP</option>
-                              <option>UNITAU</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <div class="col-lg-6">
-                            <select class="form-control" id="select" ng-model="select.modalidade" ng-change="selectModalidade()">
-                              <option>Escolha a modalidade</option>
-                              <option>Presencial</option>
-                              <option>À distância</option>
-                            </select>
-                          </div>
-                          <div class="col-lg-6">
-                            <select class="form-control" id="select" ng-model="select.turno" ng-change="selectTurno()">
-                              <option>Escolha o turno</option>
-                              <option>Manhã</option>
-                              <option>Tarde</option>
-                              <option>Noite</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <div class="col-lg-6">
-                            <select class="form-control" id="select" ng-model="select.grau" ng-change="selectGrau()">
-                              <option>Escolha o grau</option>
-                              <option>Bacharelado</option>
-                              <option>Tecnólogo</option>
-                            </select>
-                          </div>
-                          <div class="slider-form">
-                            <div class="col-lg-6">
-                              <span>Preço</span>
-                              <input class="range-slider__range" type="range" value="500" min="150" max="2000" ng-model="filter.precoCupom">
-                              <span class="pull-right">R$ {{filter.precoCupom}}</span>
-                            </div>
-                          </div>
 
+                      </div>
+                      <div class="form-group">
+                        <div class="col-lg-12">
+                          <input type="text" class="form-control" placeholder="ID do curso" ng-model="filter.id">
                         </div>
-                        <div class="form-group">
-                          <div class="col-lg-12">
-                            <input type="text" class="form-control" placeholder="ID do curso" ng-model="filter.id">
-                          </div>
-                        </div>
-                      </fieldset>
-                    </form>
-                  </div>
+                      </div>
+                    </fieldset>
+                  </form>
                 </div>
                 <div class="col-lg-6">
-                  <div class="bs-component">
-                    <form class="form-horizontal">
-                      <fieldset>
-                        <div class="form-group">
+                  <form class="form-horizontal">
+                    <fieldset>
+                      <div class="form-group">
+                        <div class="col-lg-6">
+                          <input type="text" class="form-control" placeholder="Cidade" ng-model="filter.cidade">
+                        </div>
+                        <div class="slider-form">
                           <div class="col-lg-6">
-                            <input type="text" class="form-control" placeholder="Cidade" ng-model="filter.cidade">
-                          </div>
-                          <div class="slider-form">
-                            <div class="col-lg-6">
-                              <div class="range-slider">
-                                <span>Distância Máxima</span>
-                                <input class="range-slider__range" type="range" value="50" min="10" max="100" ng-model="mapRadius" ng-change="changeRadius()">
-                                <span class="pull-right">{{mapRadius}}Km</span>
-                              </div>
-                            </div>
+                            <div class="range-slider">
+                              <span>Distância Máxima</span>
+                              <input class="range-slider__range" type="range" value="50" min="10" max="100" ng-model="mapRadius" ng-change="changeRadius()">
+                              <span class="pull-right">{{mapRadius}}Km</span>
                             </div>
                           </div>
                         </div>
-                        <div class="form-group">
-                          <div class="col-lg-12">
-                            <div id="map-canvas"></div>
-                          </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-lg-12">
+                          <div id="map-canvas"></div>
                         </div>
-                      </fieldset>
-                    </form>
-                  </div>
+                      </div>
+                    </fieldset>
+                  </form>
                 </div>
               </div>
-            </div>
+              
 
-            <div class="bs-docs-section">
               <div class="row">
                 <div class="col-lg-12">
                   <div class="page-header">
                     <h4 id="tables">Resultados</h4>
                   </div>
-                  <div class="bs-component">
-                    <div class="table-responsive">
-                      <table class="table table-striped table-hover">
-                        <thead>
-                        <tr>
-                          <th ng-click="sort('nome')">
-                            Curso
-                            <i class="fa fa-sort" ng-show="sortKey!='nome'"></i>
-                            <i class="fa" ng-show="sortKey=='nome'" ng-class="{'fa-sort-up':reverse,'fa-sort-down':!reverse}"></i>
-                          </th>
-                          <th ng-click="sort('universidade')">
-                            Universidade
-                            <i class="fa fa-sort" ng-show="sortKey!='universidade'"></i>
-                            <i class="fa" ng-show="sortKey=='universidade'" ng-class="{'fa-sort-up':reverse,'fa-sort-down':!reverse}"></i>
-                          </th>
-                          <th ng-click="sort('campus')">
-                            Campus
-                            <i class="fa fa-sort" ng-show="sortKey!='campus'"></i>
-                            <i class="fa" ng-show="sortKey=='campus'" ng-class="{'fa-sort-up':reverse,'fa-sort-down':!reverse}"></i>
-                          </th>
-                          <th ng-click="sort('modalidade')">
-                            Modalidade
-                            <i class="fa fa-sort" ng-show="sortKey!='modalidade'"></i>
-                            <i class="fa" ng-show="sortKey=='modalidade'" ng-class="{'fa-sort-up':reverse,'fa-sort-down':!reverse}"></i>
-                          </th>
-                          <th ng-click="sort('turno')">
-                            Turno
-                            <i class="fa fa-sort" ng-show="sortKey!='turno'"></i>
-                            <i class="fa" ng-show="sortKey=='turno'" ng-class="{'fa-sort-up':reverse,'fa-sort-down':!reverse}"></i>
-                          </th>
-                          <th ng-click="sort('grau')">
-                            Grau
-                            <i class="fa fa-sort" ng-show="sortKey!='grau'"></i>
-                            <i class="fa" ng-show="sortKey=='grau'" ng-class="{'fa-sort-up':reverse,'fa-sort-down':!reverse}"></i>
-                          </th>
-                          <th ng-click="sort('cidade')">
-                            Cidade
-                            <i class="fa fa-sort" ng-show="sortKey!='cidade'"></i>
-                            <i class="fa" ng-show="sortKey=='cidade'" ng-class="{'fa-sort-up':reverse,'fa-sort-down':!reverse}"></i>
-                          </th>
-                          <th ng-click="sort('bolsa')">
-                            Bolsa
-                            <i class="fa fa-sort" ng-show="sortKey!='bolsa'"></i>
-                            <i class="fa" ng-show="sortKey=='bolsa'" ng-class="{'fa-sort-up':reverse,'fa-sort-down':!reverse}"></i>
-                          </th>
-                          <th ng-click="sort('precoCupom')">
-                            Preço Cupom
-                            <i class="fa fa-sort" ng-show="sortKey!='precoCupom'"></i>
-                            <i class="fa" ng-show="sortKey=='precoCupom'" ng-class="{'fa-sort-up':reverse,'fa-sort-down':!reverse}"></i>
-                          </th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr ng-repeat="curso in cursos |
-                                        orderBy:sortKey:reverse |
-                                        filter:{
-                                          nome:filter.nome,
-                                          id:filter.id,
-                                          universidade:filter.universidade,
-                                          modalidade:filter.modalidade,
-                                          turno:filter.turno,
-                                          grau:filter.grau,
-                                          cidade:filter.cidade
-                                         }"
-                            ng-if="curso.precoCupom <= filter.precoCupom">
-                          <td>{{curso.nome}}</td>
-                          <td>{{curso.universidade}}</td>
-                          <td>{{curso.campus}}</td>
-                          <td>{{curso.modalidade}}</td>
-                          <td>{{curso.turno}}</td>
-                          <td>{{curso.grau}}</td>
-                          <td>{{curso.cidade}}</td>
-                          <td>{{curso.bolsa}}</td>
-                          <td>R$ {{curso.precoCupom}}</td>
-                        </tr>
-                        </tbody>
-                      </table>
-                    </div>
+                  <div class="table-responsive">
+                    <table class="table table-striped table-hover">
+                      <thead>
+                      <tr>
+                        <th ng-click="sort('nome')">
+                          Curso
+                          <i class="fa fa-sort" ng-show="sortKey!='nome'"></i>
+                          <i class="fa" ng-show="sortKey=='nome'" ng-class="{'fa-sort-up':reverse,'fa-sort-down':!reverse}"></i>
+                        </th>
+                        <th ng-click="sort('universidade')">
+                          Universidade
+                          <i class="fa fa-sort" ng-show="sortKey!='universidade'"></i>
+                          <i class="fa" ng-show="sortKey=='universidade'" ng-class="{'fa-sort-up':reverse,'fa-sort-down':!reverse}"></i>
+                        </th>
+                        <th ng-click="sort('campus')">
+                          Campus
+                          <i class="fa fa-sort" ng-show="sortKey!='campus'"></i>
+                          <i class="fa" ng-show="sortKey=='campus'" ng-class="{'fa-sort-up':reverse,'fa-sort-down':!reverse}"></i>
+                        </th>
+                        <th ng-click="sort('modalidade')">
+                          Modalidade
+                          <i class="fa fa-sort" ng-show="sortKey!='modalidade'"></i>
+                          <i class="fa" ng-show="sortKey=='modalidade'" ng-class="{'fa-sort-up':reverse,'fa-sort-down':!reverse}"></i>
+                        </th>
+                        <th ng-click="sort('turno')">
+                          Turno
+                          <i class="fa fa-sort" ng-show="sortKey!='turno'"></i>
+                          <i class="fa" ng-show="sortKey=='turno'" ng-class="{'fa-sort-up':reverse,'fa-sort-down':!reverse}"></i>
+                        </th>
+                        <th ng-click="sort('grau')">
+                          Grau
+                          <i class="fa fa-sort" ng-show="sortKey!='grau'"></i>
+                          <i class="fa" ng-show="sortKey=='grau'" ng-class="{'fa-sort-up':reverse,'fa-sort-down':!reverse}"></i>
+                        </th>
+                        <th ng-click="sort('cidade')">
+                          Cidade
+                          <i class="fa fa-sort" ng-show="sortKey!='cidade'"></i>
+                          <i class="fa" ng-show="sortKey=='cidade'" ng-class="{'fa-sort-up':reverse,'fa-sort-down':!reverse}"></i>
+                        </th>
+                        <th ng-click="sort('bolsa')">
+                          Bolsa
+                          <i class="fa fa-sort" ng-show="sortKey!='bolsa'"></i>
+                          <i class="fa" ng-show="sortKey=='bolsa'" ng-class="{'fa-sort-up':reverse,'fa-sort-down':!reverse}"></i>
+                        </th>
+                        <th ng-click="sort('precoCupom')">
+                          Preço Cupom
+                          <i class="fa fa-sort" ng-show="sortKey!='precoCupom'"></i>
+                          <i class="fa" ng-show="sortKey=='precoCupom'" ng-class="{'fa-sort-up':reverse,'fa-sort-down':!reverse}"></i>
+                        </th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr ng-repeat="curso in cursos |
+                                      orderBy:sortKey:reverse |
+                                      filter:{
+                                        nome:filter.nome,
+                                        id:filter.id,
+                                        universidade:filter.universidade,
+                                        modalidade:filter.modalidade,
+                                        turno:filter.turno,
+                                        grau:filter.grau,
+                                        cidade:filter.cidade
+                                       }"
+                          ng-if="curso.precoCupom <= filter.precoCupom">
+                        <td>{{curso.nome}}</td>
+                        <td>{{curso.universidade}}</td>
+                        <td>{{curso.campus}}</td>
+                        <td>{{curso.modalidade}}</td>
+                        <td>{{curso.turno}}</td>
+                        <td>{{curso.grau}}</td>
+                        <td>{{curso.cidade}}</td>
+                        <td>{{curso.bolsa}}</td>
+                        <td>R$ {{curso.precoCupom}}</td>
+                      </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>
