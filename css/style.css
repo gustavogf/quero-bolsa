@@ -185,7 +185,7 @@
 }
 
 .range-slider {
-  margin: 0px;
+  margin-top: 8px;
 }
 
 .range-slider {
@@ -200,7 +200,7 @@
   background: #d7dcdf;
   outline: none;
   padding: 0;
-  margin: 0;
+  margin-top: 5px;
 }
 .range-slider__range::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -236,28 +236,9 @@
   background: #3c9eee;
 }
 
-.range-slider__value {
-  display: inline-block;
-  position: relative;
-  width: 60px;
-  color: #fff;
-  line-height: 20px;
-  text-align: center;
-  border-radius: 3px;
-  background: #2c3e50;
-  padding: 5px 10px;
-  margin-left: 8px;
-}
-.range-slider__value:after {
-  position: absolute;
-  top: 8px;
-  left: -7px;
-  width: 0;
-  height: 0;
-  border-top: 7px solid transparent;
-  border-right: 7px solid #2c3e50;
-  border-bottom: 7px solid transparent;
-  content: '';
+input[type="range"] {
+    display: inline;
+    width: auto;
 }
 
 ::-moz-range-track {

@@ -114,9 +114,11 @@
                         </div>
                         <div class="slider-form">
                           <div class="col-lg-6">
-                            <span>Preço</span>
-                            <input class="range-slider__range" type="range" value="500" min="150" max="2000" ng-model="filter.precoCupom">
-                            <span class="pull-right">R$ {{filter.precoCupom}}</span>
+                            <div class="range-slider">
+                              <span>Preço</span>
+                              <input class="range-slider__range" type="range" value="500" min="150" max="2000" ng-model="filter.precoCupom">
+                              <span>R$ {{filter.precoCupom}}</span>
+                            </div>
                           </div>
                         </div>
 
@@ -141,7 +143,7 @@
                             <div class="range-slider">
                               <span>Distância Máxima</span>
                               <input class="range-slider__range" type="range" value="50" min="10" max="100" ng-model="mapRadius" ng-change="changeRadius()">
-                              <span class="pull-right">{{mapRadius}}Km</span>
+                              <span>{{mapRadius}}Km</span>
                             </div>
                           </div>
                         </div>
