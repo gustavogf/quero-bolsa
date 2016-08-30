@@ -65,7 +65,15 @@ app.controller('AppCtrl', function ($scope, $http) {
             'turno':'Escolha o turno',
             'grau':'Escolha o grau'
         };
+        $scope.filter = {
+            'universidade':'',
+            'modalidade':'',
+            'turno':'',
+            'grau':''
+        };
         $scope.filter.precoCupom = 500;
+        $scope.mapRadius = 50;
+        $scope.changeRadius();
     };
     
     $scope.limparCampos();
